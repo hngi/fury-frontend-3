@@ -11,8 +11,12 @@ body, html {
 
 /* home section design */
 .home-img{
-    background: url(/assets/images/Homepage\ background\ image.png) no-repeat center center/cover;
-    height: 100%;
+  color: #fff;
+  background: url("../../assets/images/Homepage-background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  margin-top: 70px;
 }
 
 .home-row{
@@ -51,6 +55,9 @@ body, html {
 
 .book-row{
     background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
 }
 
 .check-container{
@@ -63,12 +70,12 @@ body, html {
 }
 
 .check{
+    flex: 100%;
     border: 3px solid #344A71;
     font-size: 10px;
     font-weight: 700;
     color: #344A71;
     padding: 6px;
-    margin: 20px 24px 20px 25.2px;
 }
 
 .home-input{
@@ -79,13 +86,12 @@ body, html {
 }
 
 .book{
+    text-align: center;
+    border-style: none;
+    height: 63px;
     background-color: #344A71;
     font-weight: 700;
-    font-size: 23px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    font-size: 23px;    
 }
 
 /* about section design */
@@ -317,6 +323,14 @@ body, html {
 
 /*Media queries for responsiveness to small screens*/
 @media screen and (max-width: 600px){
+.col-sm-3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -371,8 +385,15 @@ body, html {
     max-width: 100%;
     padding: 0 5px;
 }
+.reviews-box {
+    margin-top: 3px;
+}
 
-.gallery-img:hover{
+.reviews-box:nth-child(1) {
+    margin-top: 2rem;
+}
+
+.gallery-img:hover {
     cursor: none;
     transform: none;
     box-shadow: none;
