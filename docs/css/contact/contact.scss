@@ -20,6 +20,7 @@
   background-color: #000;
   opacity: 0.9;
   color: #fff;
+  margin-top: 80px;
 
   &::after {
     background: url("../../assets/images/HEADER-IMAGE-CONTACT\ US.png");
@@ -62,9 +63,13 @@
 }
 
 .contact-form {
-  margin-top: 30px;
-  padding: 0 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 40px 10px;
 
+  @include for-phone{
+    padding: 10px;
+  }
   .form-container {
     display: flex;
     justify-content: space-around;
